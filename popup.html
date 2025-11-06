@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Wolvesville Mod Menu</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/popup.css'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="mod-menu-container">
+        <!-- Header Futurista -->
+        <div class="mod-header">
+            <div class="header-glow"></div>
+            <div class="mod-logo">
+                <div class="logo-icon">⚡</div>
+                <div class="logo-text">
+                    <span class="logo-title">WOLVESVILLE</span>
+                    <span class="logo-subtitle">MOD MENU</span>
+                </div>
+            </div>
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <span>ONLINE</span>
+            </div>
+        </div>
+
+        <!-- Player Info Section -->
+        <div class="player-section">
+            <div class="section-header">
+                <i class='bx bx-user-circle'></i>
+                <span>PLAYER STATS</span>
+                <!-- BOTÓN DE REFRESH -->
+                <button class="refresh-stats-btn" id="refresh-stats-btn" title="Refresh Stats">
+                    <i class='bx bx-refresh'></i>
+                </button>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class='bx bx-id-card'></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-label">ID</span>
+                        <span class="stat-value" id="id-info">Loading...</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class='bx bx-user'></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-label">USERNAME</span>
+                        <span class="stat-value" id="username-info">Loading...</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class='bx bx-trophy'></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-label">LEVEL</span>
+                        <span class="stat-value" id="level-info">Loading...</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class='bx bx-bar-chart-alt-2'></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-label">TOTAL EXP</span>
+                        <span class="stat-value" id="total-exp-info">Loading...</span>
+                    </div>
+                </div>
+
+                <div class="stat-card gold">
+                    <div class="stat-icon">
+                        <i class='bx bx-coin-stack'></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-label">GOLD</span>
+                        <span class="stat-value" id="gold-info">Loading...</span>
+                    </div>
+                </div>
+
+                <div class="stat-card rose">
+                    <div class="stat-icon">
+                        <i class='bx bx-gift'></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-label">ROSE</span>
+                        <span class="stat-value" id="rose-info">Loading...</span>
+                    </div>
+                </div>
+
+                <div class="stat-card lootbox">
+                    <div class="stat-icon">
+                        <i class='bx bx-package'></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-label">LOOT BOXES</span>
+                        <span class="stat-value" id="lootbox-info">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features-section">
+            <div class="section-header">
+                <i class='bx bx-joystick'></i>
+                <span>FEATURES</span>
+            </div>
+            
+            <div class="features-grid">
+                <button class="feature-btn" id="auto-gold-btn">
+                    <i class='bx bx-coin'></i>
+                    <span>AUTO GOLD WHEELING</span>
+                </button>
+                
+                <button class="feature-btn" id="auto-rose-btn">
+                    <i class='bx bx-gift'></i>
+                    <span>AUTO ROSE WHEELING</span>
+                </button>
+
+                <button class="feature-btn" id="auto-lootbox-btn">
+                    <i class='bx bx-package'></i>
+                    <span>AUTO LOOTBOX OPENING</span>
+                </button>
+
+                <button class="feature-btn" id="big-bio-btn">
+                    <i class='bx bx-text'></i>
+                    <span>SET BIG BIO</span>
+                </button>
+
+                <button class="feature-btn" id="color-icon-btn">
+                    <i class='bx bx-palette'></i>
+                    <span>COOL COLOR ICON</span>
+                </button>
+
+                <button class="feature-btn" id="level-clan-btn">
+                    <i class='bx bx-shield'></i>
+                    <span>SET LEVEL CLAN</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="mod-footer">
+            <div class="footer-line"></div>
+            <div class="footer-text">
+                <i class='bx bx-shield-quarter'></i>
+                <span>v1.0.0</span>
+            </div>
+        </div>
+
+        <!-- Container para mostrar mensaje cuando no está en wolvesville -->
+        <div class="container" style="display: none;"></div>
+    </div>
+
+    <script type="module" src='./scripts/popup.js'></script>
+</body>
+</html>
